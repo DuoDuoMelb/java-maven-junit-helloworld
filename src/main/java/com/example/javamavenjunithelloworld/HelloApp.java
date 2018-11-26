@@ -36,6 +36,7 @@ public class HelloApp {
             System.err.println("Something went wrong: " + e.getMessage());
             System.exit(EXIT_STATUS_HELLO_FAILED);
         }
+        // system out the result
         hi.sayHello(System.out);
     }
 
