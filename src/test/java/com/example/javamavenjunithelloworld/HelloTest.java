@@ -36,7 +36,7 @@ public class HelloTest {
     public void testSayHelloAFewTimes() {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
-
+        // a new Hello object
         Hello hi = new Hello();
         hi.setTimes(3);
         hi.sayHello(stream);
