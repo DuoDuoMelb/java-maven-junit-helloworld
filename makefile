@@ -3,20 +3,20 @@ DIR := "dev"
 OS := $(shell uname)
 
 build:
-	#./scripts/my-important-task.sh my-parameter
-	@echo build..started
-	mvn build
+       #./scripts/my-important-task.sh my-parameter
+       @echo build..started
+       mvn clean verify compile
 
-install:
-	#./scripts/my-important-task.sh my-parameter
-	@echo install${GIT_REPO}
-	mvn install
+package:
+       #./scripts/my-important-task.sh my-parameter
+       @echo Package${GIT_REPO}
+       mvn package
 
 test:
-	#./scripts/my-important-task.sh my-parameter
-	@echo delete${GIT_REPO}
-	mvn test
+       #./scripts/my-important-task.sh my-parameter
+       @echo delete${GIT_REPO}
+       mvn test
 
 clean:
-	@echo "Clean starts."
-	mvn clean
+       @echo "Clean starts."
+       mvn clean
