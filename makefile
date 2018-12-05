@@ -5,11 +5,11 @@ OS := $(shell uname)
 build:
        #./scripts/my-important-task.sh my-parameter
        @echo    build..started
-       mvn  clean   verify  compile
+       mvn    clean    verify   compile
 
 package:
        #./scripts/my-important-task.sh my-parameter
-       @echo Package${GIT_REPO}
+       @echo    Package${GIT_REPO}
        mvn  package
 
 test:
